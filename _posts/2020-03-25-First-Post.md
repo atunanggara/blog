@@ -14,8 +14,9 @@ This first post will be about my set up for this blog using [fastpages](https://
 
 In the past couple of weeks, the [Introduction to Machine Learning for Coders](https://course18.fast.ai/ml) by Jeremy Howard have helped me better understand Random Forest technique and provided me with a nice introduction to deep learning. 
 
-Then, [covid-19](https://www.who.int/emergencies/diseases/novel-coronavirus-2019) happened. 
-![](https://flic.kr/p/2iDBF1E)
+Then, [covid-19](https://www.who.int/emergencies/diseases/novel-coronavirus-2019) happened.  
+
+![covid-19]({{site.baseurl}}/images/covid-19wordcloud.jpg "https://flic.kr/p/2iDBF1E") 
 
 Since I am a fan of [fast.ai](https://www.fast.ai/), I ended up listening to [Jeremy's YouTube summary on the situation](https://youtu.be/GZ0yNMnvwqY). At the end of his video, he pointed his audience to the [fast.ai forum](https://forums.fast.ai/c/covid-19/52). 
 
@@ -28,3 +29,11 @@ In terms of [setting up fastpages](https://github.com/fastai/fastpages#setup-ins
 However, I find myself stumbling through what would be the next step for me once I have the blog up and running. So, here is my attempt to share with you what I have done to customize this blog. 
 
 ### Main page
+
+The main page can be accessed under `index.html` on the main repository:
+![covid-19]({{site.baseurl}}/images/index-html.png "index html")   
+
+Once I hit the `Edit this file` button, I used my markdown skill to edit the pages: 
+
+![edit pages]({{site.baseurl}}/images/Index-playaround.png "Edit index")   
+
