@@ -30,7 +30,7 @@ However, I find myself stumbling through what would be the next step for me once
 
 ### Main page
 
-The main page can be accessed under `index.html` on the main repository:  
+The main page can be accessed under `index.html` on the main repository:   
 ![covid-19]({{site.baseurl}}/images/index-html.png "index html")   
 
 Once I hit the `Edit this file` button, I used my markdown skill to edit the pages: 
