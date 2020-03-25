@@ -1,4 +1,12 @@
-# First Post - Setting up my own blog  
+---
+toc: true
+layout: post
+description: Setting up my own blog with fastpages.
+categories: [markdown]
+title: First Post - Setting up fastpages blog  
+---
+
+# First Post - Setting up fastpages blog  
 
 This first post will be about my set up for this blog using [fastpages](https://github.com/fastai/fastpages) and how I stumble into it.  
 
