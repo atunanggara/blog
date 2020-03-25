@@ -31,9 +31,23 @@ However, I find myself stumbling through what would be the next step for me once
 ### Main page
 
 The main page can be accessed under `index.html` on the main repository:   
-![covid-19]({{site.baseurl}}/images/index-html.png "index html")   
+![covid-19]({{site.baseurl}}/images/index-html.png "")   
 
-Once I hit the `Edit this file` button, I used my markdown skill to edit the pages: 
+Once I hit the `Edit this file` [button](https://help.github.com/assets/images/help/repository/edit-file-edit-button.png), I used my markdown skill to edit the pages: 
 
-![edit pages]({{site.baseurl}}/images/Index-playaround.png "Edit index")   
+![edit pages]({{site.baseurl}}/images/Index-playaround.png "")   
 
+Two things to note: 
+- **line 6** shows me using `<!--` in the beginning and `-->` at the end to comment the index.html file. Since markdown do not have the capacity to comment, I used [html comment tag](https://html.com/tags/comment-tag/) instead. 
+- If you are not familiar with markdown, here are some guides from [fastpages](https://fastpages.fast.ai/markdown/2020/01/14/test-markdown-post.html) or from [github](https://guides.github.com/features/mastering-markdown/)
+
+### About Me
+
+The `About Me` page can be accessed under `_pages/about.md` on the main repository:  
+![about me](({{site.baseurl}}/images/blog_about.png "")   
+
+Repeat the process on the Main Page. 
+
+## Summary
+
+I hope that this post will help others who are trying to set up their first fastpages site. Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/atunanggara/) if you have any questions!
