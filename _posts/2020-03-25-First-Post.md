@@ -14,9 +14,9 @@ This first post will be about my set up for this blog using [fastpages](https://
 
 In the past couple of weeks, the [Introduction to Machine Learning for Coders](https://course18.fast.ai/ml) by Jeremy Howard have helped me better understand Random Forest technique and provided me with a nice introduction to deep learning. 
 
-Then, [covid-19](https://www.who.int/emergencies/diseases/novel-coronavirus-2019) happened.  
-
 ![covid-19]({{site.baseurl}}/images/covid-19wordcloud.jpg "https://flic.kr/p/2iDBF1E") 
+
+Then, [covid-19](https://www.who.int/emergencies/diseases/novel-coronavirus-2019) happened.  
 
 Since I am a fan of [fast.ai](https://www.fast.ai/), I ended up listening to [Jeremy's YouTube summary on the situation](https://youtu.be/GZ0yNMnvwqY). At the end of his video, he pointed his audience to the [fast.ai forum](https://forums.fast.ai/c/covid-19/52). 
 
