@@ -24,7 +24,7 @@ When I searched through it, I stumbled upon the beautiful [Covid-19 Dashboards](
 
 ## Setting up
 
-In terms of [setting up fastpages](https://github.com/fastai/fastpages#setup-instructions), it is pretty self-explanatory. I am thankful to [Abdul Majed](https://twitter.com/1littlecoder) for his nice [walk-through video](https://youtu.be/L0boq3zqazI) that helped reassure me that I am in the right path.  
+In terms of [setting up fastpages](https://github.com/fastai/fastpages#setup-instructions), it is pretty self-explanatory. I am thankful to [Abdul Majed](https://twitter.com/1littlecoder) for his nice [walk-through video](https://youtu.be/L0boq3zqazI) that helped reassure me that I am on the right track.  
 
 Yet, I find myself stumbling through what would be the next step for me once I have the blog template up and running. So, here is my attempt to share with you what I have done to customize this blog. 
 
@@ -38,8 +38,8 @@ Once I hit the `Edit this file` [button](https://help.github.com/assets/images/h
 ![edit pages]({{site.baseurl}}/images/Index-playaround.png)   
 
 A few things to note: 
+- The index page is created using markdown, even though it is an html file. If you are not familiar with markdown, here are some guides from [fastpages](https://fastpages.fast.ai/markdown/2020/01/14/test-markdown-post.html) or from [github](https://guides.github.com/features/mastering-markdown/)
 - **Line 6** uses `<!--` in the beginning and `-->` at the end to comment the index.html file. Since markdown do not have the capacity to comment, I used [html comment tag](https://html.com/tags/comment-tag/) instead. 
-- If you are not familiar with markdown, here are some guides from [fastpages](https://fastpages.fast.ai/markdown/2020/01/14/test-markdown-post.html) or from [github](https://guides.github.com/features/mastering-markdown/)
 - The welcome image is taken from [flickr](https://flic.kr/p/7BWCTs). 
 
 ### About Me
@@ -51,4 +51,4 @@ Same process as the `Index Page` setup above.
 
 ## Summary
 
-I hope that this post will help others who are trying to set up their first fastpages site. Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/atunanggara/) or [Twitter](https://twitter.com/atun_anggara) if you have any questions!
+I hope that this post will help others who are trying to set up their `Index Page` and `About Me` fastpages site. Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/atunanggara/) or [Twitter](https://twitter.com/atun_anggara) if you have any questions!
