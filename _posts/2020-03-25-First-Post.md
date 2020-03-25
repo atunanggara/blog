@@ -46,8 +46,8 @@ Two things to note:
 The `About Me` page can be accessed under `_pages/about.md` on the main repository:  
 ![about me]({{site.baseurl}}/images/blog_about.png)   
 
-Repeat the process on the Main Page. 
+Same process as the Main Page setup above. 
 
 ## Summary
 
-I hope that this post will help others who are trying to set up their first fastpages site. Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/atunanggara/) if you have any questions!
+I hope that this post will help others who are trying to set up their first fastpages site. Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/atunanggara/) or [Twitter](https://twitter.com/atun_anggara) if you have any questions!
