@@ -40,7 +40,7 @@ Once I hit the `Edit this file` [button](https://help.github.com/assets/images/h
 A few things to note: 
 - The `Index Page` is created using markdown, even though it is an html file. If you are not familiar with markdown, here are some guides from [fastpages](https://fastpages.fast.ai/markdown/2020/01/14/test-markdown-post.html) or from [github](https://guides.github.com/features/mastering-markdown/)
 - **Line 6** uses `<!--` in the beginning and `-->` at the end to comment the index.html file. Since markdown do not have the capacity to comment, I used [html comment tag](https://html.com/tags/comment-tag/) instead. 
-- The welcome image is taken from [flickr](https://flic.kr/p/7BWCTs). I embedded the image by uploading it into github repository `images` folder and link it through `![edit pages]({{site.baseurl}}/images/Index-playaround.png)`.
+- The welcome image is taken from [flickr](https://flic.kr/p/7BWCTs). I embedded the image by uploading it into github repository `images` folder and coding it into the page (`![edit pages]({{site.baseurl}}/images/Index-playaround.png)`).
 
 ### About Me
 
