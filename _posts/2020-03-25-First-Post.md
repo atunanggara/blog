@@ -44,7 +44,7 @@ Two things to note:
 ### About Me
 
 The `About Me` page can be accessed under `_pages/about.md` on the main repository:  
-![about me](({{site.baseurl}}/images/blog_about.png "")   
+![about me]({{site.baseurl}}/images/blog_about.png "")   
 
 Repeat the process on the Main Page. 
 
