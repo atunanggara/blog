@@ -11,5 +11,7 @@ _notebooks/.ipynb_checkpoints
 .netlify
 .tweet-cache
 __pycache__
-2020-01-14-test-markdown-post.md
-2020-02-20-test.ipynb
+
+#first generic posts
+_posts/2020-01-14-test-markdown-post.md
+_notebooks/2020-02-20-test.ipynb
