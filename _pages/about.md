@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-Hi my name is Atun Anggara and welcome to my professional blog! I am a data scientist with experience in NLP, statistics, and various machine learning methods. 
+Hi and welcome to my professional blog! My name is Atun Anggara and I am a data scientist with experience in NLP, statistics, and various machine learning methods. 
 
 I got interested in data science after receiving my Ph.D. in the [computational chemical engineering catalysis area](https://scholar.google.com/citations?user=PyTERHUAAAAJ&hl=en) and doing my post-doc in the First Year of Studies program at the [University of Notre Dame](www.nd.edu). 
 
