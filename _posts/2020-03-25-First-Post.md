@@ -35,7 +35,7 @@ The main page can be accessed under `index.html` on the main repository:
 
 Once I hit the `Edit this file` [button](https://help.github.com/assets/images/help/repository/edit-file-edit-button.png), I used my markdown skill to edit the pages: 
 
-![edit pages]({{site.baseurl}}/images/Index-playaround.png "")   
+![edit pages]({{site.baseurl}}/images/Index-playaround.png)   
 
 Two things to note: 
 - **line 6** shows me using `<!--` in the beginning and `-->` at the end to comment the index.html file. Since markdown do not have the capacity to comment, I used [html comment tag](https://html.com/tags/comment-tag/) instead. 
@@ -44,7 +44,7 @@ Two things to note:
 ### About Me
 
 The `About Me` page can be accessed under `_pages/about.md` on the main repository:  
-![about me]({{site.baseurl}}/images/blog_about.png "")   
+![about me]({{site.baseurl}}/images/blog_about.png)   
 
 Repeat the process on the Main Page. 
 
