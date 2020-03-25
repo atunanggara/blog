@@ -1,14 +1,14 @@
 ---
 toc: true
 layout: post
-description: Setting up main page and about me on fastpages.
+description: Setting up Index Page and About Me on fastpages.
 categories: [markdown]
 title: First Post - Setting up fastpages blog  
 ---
 
 # First Post - Setting up fastpages blog  
 
-This first post will be about how I set up my `index page` and `about me` for this [fastpages](https://github.com/fastai/fastpages) blog and how I stumble upon it.  
+This first post will be about how I set up my `Index Page` and `About Me` for this [fastpages](https://github.com/fastai/fastpages) blog and how I stumble upon it.  
 
 ## Introduction  
 
@@ -30,7 +30,7 @@ Yet, I find myself stumbling through what would be the next step for me once I h
 
 ### Index Page
 
-The index page can be accessed under `index.html` on the main repository:   
+The Index Page can be accessed under `index.html` on the main repository:   
 ![covid-19]({{site.baseurl}}/images/index-html.png)   
 
 Once I hit the `Edit this file` [button](https://help.github.com/assets/images/help/repository/edit-file-edit-button.png), I used my markdown skill to edit the pages: 
@@ -38,7 +38,7 @@ Once I hit the `Edit this file` [button](https://help.github.com/assets/images/h
 ![edit pages]({{site.baseurl}}/images/Index-playaround.png)   
 
 A few things to note: 
-- The index page is created using markdown, even though it is an html file. If you are not familiar with markdown, here are some guides from [fastpages](https://fastpages.fast.ai/markdown/2020/01/14/test-markdown-post.html) or from [github](https://guides.github.com/features/mastering-markdown/)
+- The `Index Page` is created using markdown, even though it is an html file. If you are not familiar with markdown, here are some guides from [fastpages](https://fastpages.fast.ai/markdown/2020/01/14/test-markdown-post.html) or from [github](https://guides.github.com/features/mastering-markdown/)
 - **Line 6** uses `<!--` in the beginning and `-->` at the end to comment the index.html file. Since markdown do not have the capacity to comment, I used [html comment tag](https://html.com/tags/comment-tag/) instead. 
 - The welcome image is taken from [flickr](https://flic.kr/p/7BWCTs). 
 
