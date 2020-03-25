@@ -12,6 +12,8 @@ The experience brought me the opportunity to work with various data science tech
 
 Currently, I am continuing to round up my data science skills. That includes being a part of the [deep learning study group in the community](https://www.meetup.com/Twin-Cities-Deep-Learning-Study-Group/events/). 
 
+Feel free to reach out and connect with me via [LinkedIn](https://www.linkedin.com/in/atunanggara/).
+
 This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
 
 
