@@ -1,8 +1,8 @@
 ---
-toc: true
+toc: false
 layout: post
 description: Setting up Index Page and About Me on fastpages.
-categories: [markdown]
+categories: [markdown][fastpages]
 title: First Post - Setting up Index Page and About Me on fastpages  
 ---
 
