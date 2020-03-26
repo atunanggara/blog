@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://atunanggara.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://atunanggara.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-26T10:49:02-05:00</updated><id>https://atunanggara.github.io/blog/feed.xml</id><title type="html">Learning Data Science</title><subtitle>A data science blog to showcase my work</subtitle><entry><title type="html">First Post - Setting up Index Page and About Me on fastpages</title><link href="https://atunanggara.github.io/blog/fastpages/2020/03/25/First-Post.html" rel="alternate" type="text/html" title="First Post - Setting up Index Page and About Me on fastpages" /><published>2020-03-25T00:00:00-05:00</published><updated>2020-03-25T00:00:00-05:00</updated><id>https://atunanggara.github.io/blog/fastpages/2020/03/25/First-Post</id><content type="html" xml:base="https://atunanggara.github.io/blog/fastpages/2020/03/25/First-Post.html">&lt;!-- # First Post - Setting up Index Page and About Me on fastpages --&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://atunanggara.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://atunanggara.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-03-26T15:44:14-05:00</updated><id>https://atunanggara.github.io/blog/feed.xml</id><title type="html">Learning Data Science</title><subtitle>A data science blog to showcase my work</subtitle><entry><title type="html">First Post - Setting up Index Page and About Me on fastpages</title><link href="https://atunanggara.github.io/blog/fastpages/2020/03/25/First-Post.html" rel="alternate" type="text/html" title="First Post - Setting up Index Page and About Me on fastpages" /><published>2020-03-25T00:00:00-05:00</published><updated>2020-03-25T00:00:00-05:00</updated><id>https://atunanggara.github.io/blog/fastpages/2020/03/25/First-Post</id><content type="html" xml:base="https://atunanggara.github.io/blog/fastpages/2020/03/25/First-Post.html">&lt;!-- # First Post - Setting up Index Page and About Me on fastpages --&gt;
 
 &lt;p&gt;This first post will be about how I set up my &lt;code class=&quot;highlighter-rouge&quot;&gt;Index Page&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;About Me&lt;/code&gt; for this &lt;a href=&quot;https://github.com/fastai/fastpages&quot;&gt;fastpages&lt;/a&gt; site along with an introduction on how I stumble upon the platform.&lt;/p&gt;
 
@@ -22,7 +22,7 @@
 
 &lt;h3 id=&quot;index-page&quot;&gt;Index Page&lt;/h3&gt;
 
-&lt;p&gt;The Index Page can be accessed under &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt; on the main repository: &lt;br /&gt;
+&lt;p&gt;The Index Page can be accessed under &lt;code class=&quot;highlighter-rouge&quot;&gt;index.html&lt;/code&gt; on the main repository:
 &lt;img src=&quot;/blog/images/index-html.png&quot; alt=&quot;covid-19&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Once I hit the &lt;code class=&quot;highlighter-rouge&quot;&gt;Edit this file&lt;/code&gt; &lt;a href=&quot;https://help.github.com/assets/images/help/repository/edit-file-edit-button.png&quot;&gt;button&lt;/a&gt;, I used my markdown skill to edit the pages:&lt;/p&gt;
@@ -30,6 +30,7 @@
 &lt;p&gt;&lt;img src=&quot;/blog/images/Index-playaround.png&quot; alt=&quot;edit pages&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A few things to note:&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;Index Page&lt;/code&gt; is created using markdown, even though it is an html file. If you are not familiar with markdown, here are some guides from &lt;a href=&quot;https://fastpages.fast.ai/markdown/2020/01/14/test-markdown-post.html&quot;&gt;fastpages&lt;/a&gt; or from &lt;a href=&quot;https://guides.github.com/features/mastering-markdown/&quot;&gt;github&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Line 6&lt;/strong&gt; uses &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;!--&lt;/code&gt; in the beginning and &lt;code class=&quot;highlighter-rouge&quot;&gt;--&amp;gt;&lt;/code&gt; at the end to comment the index.html file. Since markdown do not have the capacity to comment, I used &lt;a href=&quot;https://html.com/tags/comment-tag/&quot;&gt;html comment tag&lt;/a&gt; instead.&lt;/li&gt;
@@ -38,7 +39,7 @@
 
 &lt;h3 id=&quot;about-me&quot;&gt;About Me&lt;/h3&gt;
 
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;About Me&lt;/code&gt; page can be accessed under &lt;code class=&quot;highlighter-rouge&quot;&gt;_pages/about.md&lt;/code&gt; on the main repository:&lt;br /&gt;
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;About Me&lt;/code&gt; page can be accessed under &lt;code class=&quot;highlighter-rouge&quot;&gt;_pages/about.md&lt;/code&gt; on the main repository:
 &lt;img src=&quot;/blog/images/blog_about.png&quot; alt=&quot;about me&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Same process as the &lt;code class=&quot;highlighter-rouge&quot;&gt;Index Page&lt;/code&gt; setup above.&lt;/p&gt;
