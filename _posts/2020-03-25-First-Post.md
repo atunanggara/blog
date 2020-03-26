@@ -12,7 +12,7 @@ This first post will be about how I set up my `Index Page` and `About Me` for th
 
 ## Introduction  
 
-In the past couple of weeks, the [Introduction to Machine Learning for Coders](https://course18.fast.ai/ml) by Jeremy Howard have helped me better understand Random Forest technique and provided me with a nice introduction to deep learning. 
+In the past couple of weeks, the [Introduction to Machine Learning for Coders](https://course18.fast.ai/ml) by Jeremy Howard has helped me better understand Random Forest technique and provided me with a nice introduction to deep learning. 
 
 ![covid-19]({{site.baseurl}}/images/covid-19wordcloud.jpg "https://flic.kr/p/2iDBF1E") 
 
