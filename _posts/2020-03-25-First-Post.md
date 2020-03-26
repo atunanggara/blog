@@ -6,7 +6,7 @@ categories: [fastpages]
 title: First Post - Setting up Index Page and About Me on fastpages  
 ---
 
-# First Post - Setting up Index Page and About Me on fastpages 
+<!-- # First Post - Setting up Index Page and About Me on fastpages -->
 
 This first post will be about how I set up my `Index Page` and `About Me` for this [fastpages](https://github.com/fastai/fastpages) site and how I stumble upon it.  
 
