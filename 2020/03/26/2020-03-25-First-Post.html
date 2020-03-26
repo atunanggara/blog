@@ -1,0 +1,48 @@
+<h1 id="first-post---setting-up-index-page-and-about-me-on-fastpages">First Post - Setting up Index Page and About Me on fastpages</h1>
+
+<p>This first post will be about how I set up my <code class="highlighter-rouge">Index Page</code> and <code class="highlighter-rouge">About Me</code> for this <a href="https://github.com/fastai/fastpages">fastpages</a> site and how I stumble upon it.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>In the past couple of weeks, the <a href="https://course18.fast.ai/ml">Introduction to Machine Learning for Coders</a> by Jeremy Howard has helped me better understand Random Forest technique and provided me with a nice introduction to deep learning.</p>
+
+<p><img src="/blog/images/covid-19wordcloud.jpg" alt="covid-19" title="https://flic.kr/p/2iDBF1E" /></p>
+
+<p>Then, <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">Covid-19</a> happened.</p>
+
+<p>Since I am a fan of <a href="https://www.fast.ai/">fast.ai</a>, I listened to <a href="https://youtu.be/GZ0yNMnvwqY">Jeremy’s YouTube summary on the situation</a>. At the end of his video, he pointed his audience to the <a href="https://forums.fast.ai/c/covid-19/52">fast.ai forum</a>.</p>
+
+<p>When I searched through it, I stumbled upon the beautiful <a href="https://covid19dashboards.com/">Covid-19 Dashboards</a> website. The beauty and simplicity of the format is what really sold me into creating my site using this <a href="https://github.com/fastai/fastpages">fastpages</a>.</p>
+
+<h2 id="setting-up">Setting up</h2>
+
+<p>In terms of <a href="https://github.com/fastai/fastpages#setup-instructions">setting up fastpages</a>, it is pretty self-explanatory. I am thankful to <a href="https://twitter.com/1littlecoder">Abdul Majed</a> for his nice <a href="https://youtu.be/L0boq3zqazI">walk-through video</a> that helped reassure me that I am on the right track.</p>
+
+<p>Yet, I find myself stumbling through what would be the next step for me once I have the blog template up and running. So, here is my attempt to share with you what I have done to customize the <code class="highlighter-rouge">Index Page</code> and <code class="highlighter-rouge">About Me</code> page.</p>
+
+<h3 id="index-page">Index Page</h3>
+
+<p>The Index Page can be accessed under <code class="highlighter-rouge">index.html</code> on the main repository: <br />
+<img src="/blog/images/index-html.png" alt="covid-19" /></p>
+
+<p>Once I hit the <code class="highlighter-rouge">Edit this file</code> <a href="https://help.github.com/assets/images/help/repository/edit-file-edit-button.png">button</a>, I used my markdown skill to edit the pages:</p>
+
+<p><img src="/blog/images/Index-playaround.png" alt="edit pages" /></p>
+
+<p>A few things to note:</p>
+<ul>
+  <li>The <code class="highlighter-rouge">Index Page</code> is created using markdown, even though it is an html file. If you are not familiar with markdown, here are some guides from <a href="https://fastpages.fast.ai/markdown/2020/01/14/test-markdown-post.html">fastpages</a> or from <a href="https://guides.github.com/features/mastering-markdown/">github</a></li>
+  <li><strong>Line 6</strong> uses <code class="highlighter-rouge">&lt;!--</code> in the beginning and <code class="highlighter-rouge">--&gt;</code> at the end to comment the index.html file. Since markdown do not have the capacity to comment, I used <a href="https://html.com/tags/comment-tag/">html comment tag</a> instead.</li>
+  <li>The welcome image is taken from <a href="https://flic.kr/p/7BWCTs">flickr</a>. I embedded the image by uploading it into github repository <code class="highlighter-rouge">images</code> folder and coding it into the page (<code class="highlighter-rouge">![edit pages](/blog/images/Index-playaround.png)</code>).</li>
+</ul>
+
+<h3 id="about-me">About Me</h3>
+
+<p>The <code class="highlighter-rouge">About Me</code> page can be accessed under <code class="highlighter-rouge">_pages/about.md</code> on the main repository:<br />
+<img src="/blog/images/blog_about.png" alt="about me" /></p>
+
+<p>Same process as the <code class="highlighter-rouge">Index Page</code> setup above.</p>
+
+<h2 id="summary">Summary</h2>
+
+<p>I hope that this post will help others who are trying to set up their <code class="highlighter-rouge">Index Page</code> and <code class="highlighter-rouge">About Me</code> fastpages site. Feel free to reach out to me on <a href="https://www.linkedin.com/in/atunanggara/">LinkedIn</a> or <a href="https://twitter.com/atun_anggara">Twitter</a> if you have any questions!</p>
