@@ -13,7 +13,7 @@
 <meta property="og:url" content="https://atunanggara.github.io/blog/categories/" />
 <meta property="og:site_name" content="Learning Data Science" />
 <script type="application/ld+json">
-{"description":"A data science blog to showcase my work","@type":"WebPage","url":"https://atunanggara.github.io/blog/categories/","headline":"Tags","@context":"https://schema.org"}</script>
+{"headline":"Tags","description":"A data science blog to showcase my work","@type":"WebPage","url":"https://atunanggara.github.io/blog/categories/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://atunanggara.github.io/blog/feed.xml" title="Learning Data Science" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -32,7 +32,7 @@
 <meta property="og:url" content="https://atunanggara.github.io/blog/categories/" />
 <meta property="og:site_name" content="Learning Data Science" />
 <script type="application/ld+json">
-{"description":"A data science blog to showcase my work","@type":"WebPage","url":"https://atunanggara.github.io/blog/categories/","headline":"Tags","@context":"https://schema.org"}</script>
+{"headline":"Tags","description":"A data science blog to showcase my work","@type":"WebPage","url":"https://atunanggara.github.io/blog/categories/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -44,7 +44,7 @@
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
     <script>
@@ -60,12 +60,29 @@
     </script>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+<script type="text/javascript">
+require.config({
+  paths: {
+    jquery: 'https://code.jquery.com/jquery-3.5.0.min',
+    plotly: 'https://cdn.plot.ly/plotly-latest.min'
+  },
+
+  shim: {
+    plotly: {
+      deps: ['jquery'],
+      exports: 'plotly'
+    }
+  }
+});
+</script>
+
 <script>
 function wrap_img(fn) {
     if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
         var elements = document.querySelectorAll(".post img");
         Array.prototype.forEach.call(elements, function(el, i) {
-            if (el.getAttribute("title")) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
                 const caption = document.createElement('figcaption');
                 var node = document.createTextNode(el.getAttribute("title"));
                 caption.appendChild(node);
@@ -108,62 +125,55 @@ window.onload = wrap_img;
       <div class="wrapper">
         <div class="home">
 
+
 <h2>Contents</h2>
 
+  
+  
+  
 
-<ul>
+  <ul>
+  
+    <li><a href="#altair">altair</a></li>
+  
+    <li><a href="#covid-19">covid-19</a></li>
+  
+    <li><a href="#fastpages">fastpages</a></li>
+  
+    <li><a href="#jupyter">jupyter</a></li>
+  
+  </ul>
 
   
-  <li><a href="#fastpages">fastpages</a></li>
-
+      <h3 id ="altair"><i class="fas fa-tags category-tags-icon"></i></i> altair</h3>
+      <a name="altair"></a>
+      <article class="archive-item">
+        <p class="post-meta post-meta-title"><a class="page-meta" href="/blog/jupyter/covid-19/altair/2020/04/02/covid-19-dataset.html">Exploring Covid-19 Dataset</a>  • Apr 2, 2020</p>
+      </article>
+      
   
-  <li><a href="#jupyter">jupyter</a></li>
-
+      <h3 id ="covid-19"><i class="fas fa-tags category-tags-icon"></i></i> covid-19</h3>
+      <a name="covid-19"></a>
+      <article class="archive-item">
+        <p class="post-meta post-meta-title"><a class="page-meta" href="/blog/jupyter/covid-19/altair/2020/04/02/covid-19-dataset.html">Exploring Covid-19 Dataset</a>  • Apr 2, 2020</p>
+      </article>
+      
   
-  <li><a href="#covid-19">covid-19</a></li>
-
+      <h3 id ="fastpages"><i class="fas fa-tags category-tags-icon"></i></i> fastpages</h3>
+      <a name="fastpages"></a>
+      <article class="archive-item">
+        <p class="post-meta post-meta-title"><a class="page-meta" href="/blog/fastpages/2020/03/25/First-Post.html">First Post - Setting up Index Page and About Me on fastpages</a>  • Mar 25, 2020</p>
+      </article>
+      
   
-  <li><a href="#altair">altair</a></li>
+      <h3 id ="jupyter"><i class="fas fa-tags category-tags-icon"></i></i> jupyter</h3>
+      <a name="jupyter"></a>
+      <article class="archive-item">
+        <p class="post-meta post-meta-title"><a class="page-meta" href="/blog/jupyter/covid-19/altair/2020/04/02/covid-19-dataset.html">Exploring Covid-19 Dataset</a>  • Apr 2, 2020</p>
+      </article>
+      
+  
 
-</ul>
-
-
-
-    
-
-    <h3 id ="fastpages"><i class="fas fa-tags category-tags-icon"></i></i> fastpages</h3>
-    <a name="fastpages"></a>
-    <article class="archive-item">
-      <p class="post-meta post-meta-title"><a class="page-meta" href="/blog/fastpages/2020/03/25/First-Post.html">First Post - Setting up Index Page and About Me on fastpages</a>  • Mar 25, 2020</p>
-    </article>
-    
-
-    
-
-    <h3 id ="jupyter"><i class="fas fa-tags category-tags-icon"></i></i> jupyter</h3>
-    <a name="jupyter"></a>
-    <article class="archive-item">
-      <p class="post-meta post-meta-title"><a class="page-meta" href="/blog/jupyter/covid-19/altair/2020/04/02/covid-19-dataset.html">Exploring Covid-19 Dataset</a>  • Apr 2, 2020</p>
-    </article>
-    
-
-    
-
-    <h3 id ="covid-19"><i class="fas fa-tags category-tags-icon"></i></i> covid-19</h3>
-    <a name="covid-19"></a>
-    <article class="archive-item">
-      <p class="post-meta post-meta-title"><a class="page-meta" href="/blog/jupyter/covid-19/altair/2020/04/02/covid-19-dataset.html">Exploring Covid-19 Dataset</a>  • Apr 2, 2020</p>
-    </article>
-    
-
-    
-
-    <h3 id ="altair"><i class="fas fa-tags category-tags-icon"></i></i> altair</h3>
-    <a name="altair"></a>
-    <article class="archive-item">
-      <p class="post-meta post-meta-title"><a class="page-meta" href="/blog/jupyter/covid-19/altair/2020/04/02/covid-19-dataset.html">Exploring Covid-19 Dataset</a>  • Apr 2, 2020</p>
-    </article>
-    
 
 
 
