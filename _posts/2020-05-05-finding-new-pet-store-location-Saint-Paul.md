@@ -50,7 +50,7 @@ They have a similar make up as the Falcon Heights and a dog park nearby.</p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction"> </a></h2>
+<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction"> </a></h1>
 </div>
 </div>
 </div>
