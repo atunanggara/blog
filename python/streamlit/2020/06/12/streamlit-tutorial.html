@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Streamlit Tutorial | Learning Data Science</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Streamlit Tutorial" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A tutorial for streamlit platform and heroku deployment" />
+<meta property="og:description" content="A tutorial for streamlit platform and heroku deployment" />
+<link rel="canonical" href="https://atunanggara.github.io/blog/python/streamlit/2020/06/12/streamlit-tutorial.html" />
+<meta property="og:url" content="https://atunanggara.github.io/blog/python/streamlit/2020/06/12/streamlit-tutorial.html" />
+<meta property="og:site_name" content="Learning Data Science" />
+<meta property="og:image" content="https://atunanggara.github.io/blog/images/thumbnails/streamlit_logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-06-12T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"A tutorial for streamlit platform and heroku deployment","headline":"Streamlit Tutorial","dateModified":"2020-06-12T00:00:00-05:00","datePublished":"2020-06-12T00:00:00-05:00","@type":"BlogPosting","image":"https://atunanggara.github.io/blog/images/thumbnails/streamlit_logo.png","url":"https://atunanggara.github.io/blog/python/streamlit/2020/06/12/streamlit-tutorial.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://atunanggara.github.io/blog/python/streamlit/2020/06/12/streamlit-tutorial.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://atunanggara.github.io/blog/feed.xml" title="Learning Data Science" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-161945914-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Streamlit Tutorial | Learning Data Science</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Streamlit Tutorial" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A tutorial for streamlit platform and heroku deployment" />
+<meta property="og:description" content="A tutorial for streamlit platform and heroku deployment" />
+<link rel="canonical" href="https://atunanggara.github.io/blog/python/streamlit/2020/06/12/streamlit-tutorial.html" />
+<meta property="og:url" content="https://atunanggara.github.io/blog/python/streamlit/2020/06/12/streamlit-tutorial.html" />
+<meta property="og:site_name" content="Learning Data Science" />
+<meta property="og:image" content="https://atunanggara.github.io/blog/images/thumbnails/streamlit_logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-06-12T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"A tutorial for streamlit platform and heroku deployment","headline":"Streamlit Tutorial","dateModified":"2020-06-12T00:00:00-05:00","datePublished":"2020-06-12T00:00:00-05:00","@type":"BlogPosting","image":"https://atunanggara.github.io/blog/images/thumbnails/streamlit_logo.png","url":"https://atunanggara.github.io/blog/python/streamlit/2020/06/12/streamlit-tutorial.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://atunanggara.github.io/blog/python/streamlit/2020/06/12/streamlit-tutorial.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://atunanggara.github.io/blog/feed.xml" title="Learning Data Science" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-161945914-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
+<script type="text/javascript">
+require.config({
+  paths: {
+    jquery: 'https://code.jquery.com/jquery-3.5.0.min',
+    plotly: 'https://cdn.plot.ly/plotly-latest.min'
+  },
+
+  shim: {
+    plotly: {
+      deps: ['jquery'],
+      exports: 'plotly'
+    }
+  }
+});
+</script>
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Learning Data Science</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Streamlit Tutorial</h1><p class="page-description">A tutorial for streamlit platform and heroku deployment</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-06-12T00:00:00-05:00" itemprop="datePublished">
+        Jun 12, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#python">python</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/blog/categories/#streamlit">streamlit</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/atunanggara/blog/tree/master/_notebooks/2020-06-12-streamlit-tutorial.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/blog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/atunanggara/blog/master?filepath=_notebooks%2F2020-06-12-streamlit-tutorial.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/atunanggara/blog/blob/master/_notebooks/2020-06-12-streamlit-tutorial.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Summary">Summary </a></li>
+<li class="toc-entry toc-h1"><a href="#Interlude">Interlude </a></li>
+<li class="toc-entry toc-h1"><a href="#Introduction">Introduction </a></li>
+<li class="toc-entry toc-h1"><a href="#Streamlit-tutorial">Streamlit tutorial </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Heroku-deployment">Heroku deployment </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Concluding-thoughts">Concluding thoughts </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2020-06-12-streamlit-tutorial.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Summary">
+<a class="anchor" href="#Summary" aria-hidden="true"><span class="octicon octicon-link"></span></a>Summary<a class="anchor-link" href="#Summary"> </a>
+</h1>
+<p>Expanding on streamlit's <a href="https://docs.streamlit.io/en/latest/getting_started.html">tutorial</a>, I created <a href="https://streamlit-tutorial-extended.herokuapp.com/">a streamlit app on heroku</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Interlude">
+<a class="anchor" href="#Interlude" aria-hidden="true"><span class="octicon octicon-link"></span></a>Interlude<a class="anchor-link" href="#Interlude"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>It has been a tough couple of weeks for me to grapple with <a href="https://en.wikipedia.org/wiki/Killing_of_George_Floyd">events</a> that unfolded about 30 minutes away from where I live. This Martin Luther King Jr. quote that I read on <a href="https://chrisdamian.net/2020/05/29/reflections-on-a-second-night-of-fires/">Chris Damian's blog post</a> resonated with me:</p>
+<blockquote>
+<p>“Let me say as I’ve always said, and I will always continue to say, that riots are socially destructive and self-defeating. … But in the final analysis, a riot is the language of the unheard. And what is it that America has failed to hear? It has failed to hear that the plight of the Negro poor has worsened over the last few years. It has failed to hear that the promises of freedom and justice have not been met. And it has failed to hear that large segments of white society are more concerned about tranquility and the status quo than about justice, equality, and humanity. And so in a real sense our nation’s summers of riots are caused by our nation’s winters of delay. And as long as America postpones justice, we stand in the position of having these recurrences of violence and riots over and over again.”</p>
+<p>Excerpt from Martin Luther King Jr.’s speech “The Other America,” 1967 at Stanford University.</p>
+</blockquote>
+<p>Curious on the context of the quote, I ended up listening to the whole speech on YouTube:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>
+</p>
+<center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dOWDtDUKz-U%20%20%20" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+I hope that the words of MLK Jr. provided a context on the institutional racism that pervades the world in which we live in. May we have a more just and kind society.
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Introduction">
+<a class="anchor" href="#Introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction<a class="anchor-link" href="#Introduction"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I first heard about <a href="https://www.streamlit.io/">streamlit</a> from a data scientist in the area. Supposedly, it can create an interactive web python app in a simplified manner. So, I went ahead and run through the <a href="https://docs.streamlit.io/en/latest/getting_started.html">tutorial</a> to understand more on its capability. Since I am familiar with <a href="https://flask.palletsprojects.com/en/1.1.x/">flask</a>, I am going to compare it with streamlit in this introduction.</p>
+<p>First off, compared to <a href="https://flask.palletsprojects.com/en/1.1.x/">flask</a>, <a href="https://www.streamlit.io/">streamlit</a> is simpler when it comes to creating a dynamic web app. In flask, it is recommended to save the python file in <code>.py</code> files in root and the <a href="https://www.w3schools.com/html/html_intro.asp">html</a> file in <code>.html</code> files in <a href="/blog/images/copied_from_nb/templates"><code>templates</code></a> folder. This is partly due to html being a verbose markup language. On the other hand, streamlit uses <a href="https://github.github.com/gfm/">GitHub flavored markdown</a> and both python and markdown co-exist in one single python file. Markdown syntax can render rich formatted content in a concise manner. Of course, combining python with markdown texts can be confusing at first. But, if one is already familiar with <a href="https://jupyter.org/">jupyter notebook</a>, this format should come naturally.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Streamlit is created with fast deployment in mind. If one wants to have a perfect platform with all the bells and whistles, <a href="https://flask.palletsprojects.com/en/1.1.x/">flask</a> and <a href="https://www.djangoproject.com/">django</a> should be considered. However, if we want to keep things simple and get quick feedback from other teams, streamlit should be the way to go.</p>
+<p>With that in mind, let's get to the <a href="https://docs.streamlit.io/en/latest/getting_started.html">streamlit tutorial</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Streamlit-tutorial">
+<a class="anchor" href="#Streamlit-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>Streamlit tutorial<a class="anchor-link" href="#Streamlit-tutorial"> </a>
+</h1>
+<p><a href="https://streamlit-tutorial-extended.herokuapp.com/">My streamlit tutorial</a> is deployed on <a href="https://www.heroku.com/">heroku</a>.  The tutorial can be loosely divided into:</p>
+<ol>
+<li>Interactive DataFrame  </li>
+<li>Drawing charts and maps   </li>
+<li>Add interactivity with Widgets  </li>
+<li>Show progress </li>
+<li>Record a screencast  </li>
+</ol>
+<p>Feel free to take a look at the <a href="https://github.com/atunanggara/streamlit-tutorial-extended">github repository</a> to look into the <code>tutorial_streamlit.py</code> Python code.</p>
+<h2 id="Heroku-deployment">
+<a class="anchor" href="#Heroku-deployment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Heroku deployment<a class="anchor-link" href="#Heroku-deployment"> </a>
+</h2>
+<p>For deploying the streamlit code into heroku, I followed along this YouTube video:<br>
+
+</p>
+<center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/skpiLtEN3yk%20%20%20" frameborder="0" allowfullscreen=""></iframe>
+</center>
+
+<p>However, there are two deviations from the video:</p>
+<ol>
+<li>For the virtual environment, using my old <code>pyenv</code> resulted in <code>heroku</code> crashing during the deployment. So, I created a new <code>pyenv</code> specifically to deploy the streamlit to heroku.  </li>
+<li>For <a href="https://github.com/atunanggara/streamlit-tutorial-extended/blob/master/setup.sh">my</a> <code>setup.sh</code>, I stripped away all the backslashes and the newline characters as recommended on <a href="https://discuss.streamlit.io/t/deploying-heroku-error/1310">the streamlit's forum</a>:  
+<pre><code>mkdir -p ~/.streamlit</code></pre>
+
+<pre><code>echo "[server]  
+headless = true  
+port = $PORT  
+enableCORS = false  
+" &gt; ~/.streamlit/config.toml</code></pre>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Concluding-thoughts">
+<a class="anchor" href="#Concluding-thoughts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Concluding thoughts<a class="anchor-link" href="#Concluding-thoughts"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Streamlit package is a simple way to deploy data driven app on the internet. I am excited to use this in creating a nice interactive machine learning web app in the future!</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/blog/python/streamlit/2020/06/12/streamlit-tutorial.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>A data science blog to showcase my work</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/atunanggara" title="atunanggara"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/atun_anggara" title="atun_anggara"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
