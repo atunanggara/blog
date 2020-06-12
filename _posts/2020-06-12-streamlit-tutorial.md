@@ -3,7 +3,7 @@ keywords: fastai
 description: A tutorial for streamlit platform and heroku deployment
 title: Streamlit Tutorial      
 toc: true  
-badges: true  
+badges: false  
 categories: [python, streamlit]  
 image: images/thumbnails/streamlit_logo.png
 nb_path: _notebooks/2020-06-12-streamlit-tutorial.ipynb
@@ -52,8 +52,14 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>{% include youtube.html content='<a href="https://youtu.be/dOWDtDUKz-U">https://youtu.be/dOWDtDUKz-U</a>   ' %}
-I hope that the words of MLK Jr. provided a context on the institutional racism that pervades the world in which we live in. May we have a more just and kind society.</p>
+<p>{% include youtube.html content='<a href="https://www.youtube.com/embed/dOWDtDUKz-U">https://www.youtube.com/embed/dOWDtDUKz-U</a>' %}</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I hope that the words of MLK Jr. provided a context on the institutional racism that pervades the world in which we live in. May we have a more just and kind society.</p>
 
 </div>
 </div>
@@ -91,8 +97,20 @@ I hope that the words of MLK Jr. provided a context on the institutional racism 
 <li>Record a screencast  </li>
 </ol>
 <p>Feel free to take a look at the <a href="https://github.com/atunanggara/streamlit-tutorial-extended">github repository</a> to look into the <code>tutorial_streamlit.py</code> Python code.</p>
-<h2 id="Heroku-deployment">Heroku deployment<a class="anchor-link" href="#Heroku-deployment"> </a></h2><p>For deploying the streamlit code into heroku, I followed along this YouTube video:<br>
-{% include youtube.html content='<a href="https://youtu.be/skpiLtEN3yk">https://youtu.be/skpiLtEN3yk</a>   ' %}</p>
+<h2 id="Heroku-deployment">Heroku deployment<a class="anchor-link" href="#Heroku-deployment"> </a></h2><p>For deploying the streamlit code into heroku, I followed along this YouTube video:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>{% include youtube.html content='<a href="https://www.youtube.com/embed/skpiLtEN3yk">https://www.youtube.com/embed/skpiLtEN3yk</a>' %}</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>However, there are two deviations from the video:</p>
 <ol>
 <li>For the virtual environment, using my old <code>pyenv</code> resulted in <code>heroku</code> crashing during the deployment. So, I created a new <code>pyenv</code> specifically to deploy the streamlit to heroku.  </li>
