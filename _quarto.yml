@@ -1,6 +1,8 @@
 project:
   type: website
 
+freeze: auto
+
 website:
   description: "A data science blog to showcase my work"
   site-url: https://atunanggara.github.io/blog
