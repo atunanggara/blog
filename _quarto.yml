@@ -1,0 +1,23 @@
+project:
+  type: website
+
+website:
+  description: "A data science blog to showcase my work"
+  site-url: https://atunanggara.github.io/blog
+  title: "Learning Data Science"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/atunanggara
+      - icon: twitter
+        href: https://twitter.com/atun_anggara
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+
+
+
